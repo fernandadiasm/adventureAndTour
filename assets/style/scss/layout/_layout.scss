@@ -14,11 +14,27 @@
 }
 
 .section{
-    padding: 4.5rem 0 1rem;
+    padding: 4.5rem  1rem;
 
     &__title{
         font-size: $h2-font-size;
         margin-bottom: $mb-2-5;
         text-align: center;
+    }
+}
+
+.btn {
+    margin: $mb-1;
+    border: 0.2rem solid $first-color-alt;
+    color: $first-color-alt;
+    cursor: pointer;
+    background: none;
+    font-size: $h3-font-size;
+    padding: .5rem 1rem;
+    transition: .3s;
+
+    &:hover {
+        background-color: $first-color-alt;
+        color: $body-color;
     }
 }
