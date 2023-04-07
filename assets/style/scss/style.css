@@ -35,12 +35,8 @@ body {
   transition: 0.4s;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
   color: #219150;
-  font-weight: 600;
 }
 
 ul {
@@ -144,7 +140,8 @@ button {
 }
 
 /* change background header */
-.scroll-header {
+.bg-header {
+  background-color: #fff;
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
 }
 
@@ -156,6 +153,7 @@ button {
 /*============== home ===============*/
 .home {
   padding: 0;
+  margin-bottom: 2.5rem;
 }
 .home .swiper {
   height: 100vh;
@@ -229,6 +227,53 @@ button {
   color: #10221b;
 }
 
+/*=============== category ===============*/
+.category {
+  width: auto;
+  box-sizing: border-box;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.category .category__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.category .category__container .category__card {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 1px 8px 0px rgba(16, 34, 27, 0.3215686275);
+  text-align: center;
+  border-radius: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding-top: 10px;
+}
+.category .category__container .category__card img {
+  width: 90%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transition: 1s;
+}
+.category .category__container .category__card:hover {
+  transform: translateY(-0.25rem);
+}
+.category .category__container .category__card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #219150;
+}
+.category .category__container .category__card p {
+  font-size: 0.938rem;
+  color: #10221b;
+  text-align: justify;
+  padding: 0 20px;
+}
+
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;
@@ -283,12 +328,27 @@ button {
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 4.5rem 1rem;
 }
 .section__title {
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
   text-align: center;
+}
+
+.btn {
+  margin: 1rem;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #10221b;
+  color: #fff;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -300,6 +360,12 @@ button {
   }
 }
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .category__card img {
+    width: 100px;
+    height: 300px;
+  }
+}
 @media screen and (min-width: 769px) {
   body {
     margin: 0;
@@ -309,6 +375,10 @@ button {
   }
   .header {
     background-color: rgba(255, 255, 255, 0);
+  }
+  .bg-header {
+    background-color: #fff;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
   }
   .nav {
     padding: 0 2rem;
