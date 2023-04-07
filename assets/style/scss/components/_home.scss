@@ -12,6 +12,7 @@
 
 .home {
     padding: 0;
+    margin-bottom: $mb-2-5;
 
     .swiper {
         height: 100vh;
@@ -27,15 +28,12 @@
                 @include contentCSS;
                 background: url(../../../../public/home-bg-2.jpg) no-repeat;
                 background-position: left
-                
             }
 
             .content__three {
                 @include contentCSS;
                 background: url(../../../../public/home-bg-3.jpg) no-repeat;
                 background-position: right
-
-                
             }
 
             .content__text {
@@ -92,7 +90,7 @@
         }
 
         .swiper-button-next::after,
-        .swiper-button-prev::after{
+        .swiper-button-prev::after {
             font-size: 2rem;
             color: $first-color-alt;
         }
