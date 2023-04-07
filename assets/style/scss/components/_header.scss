@@ -20,17 +20,26 @@
     &__logo,
     &__close,
     &__toggle {
+        font-size: $h2-font-size;
         color: $title-color;
     }
 
     &__logo {
+        color: $first-color-alt;
+        padding-left: 20px;
         display: flex;
         align-items: center;
         column-gap: .25rem;
         font-weight: $font-medium;
+
+        i {
+            color: $first-color;
+        }
     }
 
     &__toggle {
+        color: $first-color-alt;
+        padding-right: 20px;
         display: inline-flex;
         font-size: 1.25rem;
         cursor: pointer;
@@ -49,16 +58,17 @@
         }
     }
 
+
+
     &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 1.5rem;
- 
+        row-gap: 1.5rem; 
     }
     
     &__link {
-        color: $title-color;
+        color: $first-color-alt;
         font-weight: $font-medium;
         transition: .3s;
 
