@@ -93,7 +93,8 @@
 }
 
 /* change background header */
-.scroll-header {
+.bg-header {
+    background-color: $body-color;
     box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1)
 }
 
