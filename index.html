@@ -9,36 +9,110 @@
     <!--=======FONT AWESOME======-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- =============== BOXICONS =============== -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
     <!--===========CSS===========-->
     <link rel="stylesheet" href="assets/style/scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css">
 
     <title>Travel</title>
 </head>
 
 <body>
     <!--==========HEADER=============-->
-    <header class="header">
-        <a href="#" class="logo"> <i class="fas fa-hiking"></i>travel.</a>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"> <i class="fas fa-hiking"></i>travel.</a>
 
-        <nav class="navbar">
-            <div id="nav-close" class="fas fa-times"></div>
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#shop">shop</a>
-            <a href="#packages">packages</a>
-            <a href="#review">review</a>
-            <a href="#blogs">blogs</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#shop" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#packages" class="nav__link">packages</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviews" class="nav__link">reviews</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blogs" class="nav__link">blogs</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
         </nav>
-
-        <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <div id="search-btn" class="fas fa-search"></div>
-        </div>
     </header>
 
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__slider container grid">
+                <div class="wrapper">
+                    <div class="slide">
+                        <div class="box" style="background: url(public/home-bg-1.jpg) no-repeat;">
+                            <div class="content">
+                                <span>never stop</span>
+                                <h3>exploring</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius consequatur eligendi id nesciunt ut commodi!</p>
+                                <a href="#" class="btn"> get started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="box second" style="background: url(public/home-bg-2.jpg) no-repeat;">
+                            <div class="content">
+                                <span>make tour</span>
+                                <h3>amazing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius consequatur eligendi id nesciunt ut commodi!</p>
+                                <a href="#" class="btn"> get started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="box" style="background: url(public/home-bg-3.jpg) no-repeat;">
+                            <div class="content">
+                                <span>exploring the</span>
+                                <h3>new world</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius consequatur eligendi id nesciunt ut commodi!</p>
+                                <a href="#" class="btn"> get started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
 
+
+
+    </main>
 
 
 
