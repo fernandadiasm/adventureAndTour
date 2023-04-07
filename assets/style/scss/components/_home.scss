@@ -1,0 +1,101 @@
+/*============== home ===============*/
+
+
+@mixin contentCSS {
+    width: 100vw;
+    height: 100vh;
+    // padding-right: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.home {
+    padding: 0;
+
+    .swiper {
+        height: 100vh;
+
+        &-slide {
+            .content__one {
+                @include contentCSS;
+                background: url(../../../../public/home-bg-1.jpg) no-repeat;
+                // align-items: start;
+
+                .teste {
+                    // width: 100%;
+                    // display: flex;
+                    // justify-content: end;
+                    // flex-direction: column;
+                }
+
+                .btn {
+                    height: 80px;
+                    width: 150px;
+                    margin-top: 1rem;
+                    // display: inline-block;
+                    border: 0.2rem solid $first-color-alt;
+                    color: $first-color-alt;
+                    cursor: pointer;
+                    background: none;
+                    font-size: $h3-font-size;
+                    padding: 1rem 1rem;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: $first-color-alt;
+                        color: $body-color;
+                    }
+                }
+
+            }
+
+            .content__two {
+                @include contentCSS;
+                background: url(../../../../public/home-bg-2.jpg) no-repeat;
+                // align-items: center;
+            }
+
+            .content__three {
+                @include contentCSS;
+                background: url(../../../../public/home-bg-3.jpg) no-repeat;
+                // align-items: center;
+            }
+
+            span {
+                font-size: $h2-font-size;
+                color: $first-color-alt;
+            }
+
+            h3 {
+                font-size: $biggest-font-size;
+                color: $first-color;
+                padding-top: .5rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                line-height: 2;
+                color: $first-color-alt;
+                font-size: $normal-font-size;
+                padding: 1rem 0;
+                text-align: justify;
+            }
+
+            span,
+            h3,
+            p {
+                width: 100%;
+                padding: 0 20%;
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+}
