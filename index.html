@@ -6,45 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=======FONT AWESOME======-->
+    <!--============== font awesome ==============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- =============== BOXICONS =============== -->
+    <!-- =============== boxicons =============== -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!--===========CSS===========-->
-    <link rel="stylesheet" href="assets/style/scss/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css">
+    <!-- ============= swiperjs css ============= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
+    <!--=================== css ==================-->
+    <link rel="stylesheet" href="assets/style/scss/style.css">
     <title>Travel</title>
 </head>
 
 <body>
-    <!--==========HEADER=============-->
+    <!--================ header ==================-->
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav">
             <a href="#" class="nav__logo"> <i class="fas fa-hiking"></i>travel.</a>
 
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="#home" class="nav__link active-link">Início</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">Sobre</a>
                     </li>
                     <li class="nav__item">
                         <a href="#shop" class="nav__link">Shop</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#packages" class="nav__link">packages</a>
+                        <a href="#packages" class="nav__link">Pacotes</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#reviews" class="nav__link">reviews</a>
+                        <a href="#reviews" class="nav__link">Reviews</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#blogs" class="nav__link">blogs</a>
+                        <a href="#blogs" class="nav__link">Blogs</a>
                     </li>
                 </ul>
 
@@ -65,18 +66,87 @@
         </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
+    <!--================= main ===================-->
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__slider container grid">
-                <div class="wrapper">
-                    <div class="slide">
+        <!--=============== home =================-->
+        <section class="home" id="home">
+            <div class="home__slider">
+
+                <!-- Slider main container -->
+                <div class="swiper new-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="content__one">
+                                <!-- <div class="teste"> -->
+                                <span>Continue</span>
+                                <h3>explorando</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio
+                                    deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at
+                                    eius
+                                    consequatur eligendi id nesciunt ut commodi!</p>
+
+                                <button href="#" class="btn"> get started</button>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="content__two">
+                                <span>make tour</span>
+                                <h3>amazing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio
+                                    deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius
+                                    consequatur eligendi id nesciunt ut commodi!</p>
+                                <a href="#" class="btn"> get started</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="conten__three">
+                                <span>exploring the</span>
+                                <h3>new world</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio
+                                    deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius
+                                    consequatur eligendi id nesciunt ut commodi!</p>
+                                <a href="#" class="btn"> get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="swiper">
+                    <div class="swiper-slide">
                         <div class="box" style="background: url(public/home-bg-1.jpg) no-repeat;">
                             <div class="content">
                                 <span>never stop</span>
                                 <h3>exploring</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius consequatur eligendi id nesciunt ut commodi!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio
+                                    deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius
+                                    consequatur eligendi id nesciunt ut commodi!</p>
                                 <a href="#" class="btn"> get started</a>
                             </div>
                         </div>
@@ -87,7 +157,9 @@
                             <div class="content">
                                 <span>make tour</span>
                                 <h3>amazing</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius consequatur eligendi id nesciunt ut commodi!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio
+                                    deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius
+                                    consequatur eligendi id nesciunt ut commodi!</p>
                                 <a href="#" class="btn"> get started</a>
                             </div>
                         </div>
@@ -98,13 +170,15 @@
                             <div class="content">
                                 <span>exploring the</span>
                                 <h3>new world</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius consequatur eligendi id nesciunt ut commodi!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita, optio
+                                    deleniti doloribus assumenda animi quasi earum, quidem quis quos ab veniam at eius
+                                    consequatur eligendi id nesciunt ut commodi!</p>
                                 <a href="#" class="btn"> get started</a>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -120,8 +194,10 @@
 
 
 
+    <!--=============== swiper js ================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!--==========JS=============-->
+    <!--================= js ====================-->
     <script src="assets/js/main.js"></script>
 </body>
 
