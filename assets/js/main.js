@@ -38,9 +38,11 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== NEW SWIPER ===============*/
-let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".new-swiper", {
+    loop: true,
+    grabCursor: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});
