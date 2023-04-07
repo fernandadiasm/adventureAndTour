@@ -1,0 +1,60 @@
+/*=============== BREAKPOINTS ===============*/
+
+
+/* for small devices*/
+
+@media screen and (max-width:320px) {
+    .container {
+        margin-left: $mb-1;
+        margin-right: $mb-1;
+    }
+}
+
+/* For medium devices */
+// @media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6.5rem 0 2rem;
+    }
+
+    .nav {
+        height: calc($header-height + 1.5rem);
+        column-gap: 3rem;
+
+        &__toggle {
+            display: none;
+        }
+
+        &__close {
+            display: none;
+        }
+
+
+        &__menu {
+            margin-left: auto;
+        }
+
+        &__list {
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+    }
+
+    .dark-theme .nav__menu {
+        box-shadow: none;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
