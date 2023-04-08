@@ -104,6 +104,18 @@
     .dark-theme .nav__menu {
         box-shadow: none;
     }
+
+    .about {
+        .about__container {
+            flex-direction: row;
+        }
+
+        .about__map {
+            iframe {
+                height: 50vh;
+            }
+        }
+    }
 }
 
 /* For large devices */
