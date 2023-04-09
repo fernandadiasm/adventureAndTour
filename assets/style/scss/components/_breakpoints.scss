@@ -117,11 +117,8 @@
         }
     }
 
-    .blog {
-        .blog__content {
-            width: 100px;
-            height: 400px;
-        }
+    .footer__container {
+        grid-template-columns: repeat(2, max-content);
     }
 }
 
@@ -178,10 +175,16 @@
         }
     }
 
-    .blog {
-        .blog__content {
-            width: 100px;
-            height: 400px;
+    .footer {
+        // height: 10rem;
+        .footer__container {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            justify-content: space-between;
+        }
+
+        .footer__copy {
+            margin-top: 7rem;
         }
     }
+
 }
