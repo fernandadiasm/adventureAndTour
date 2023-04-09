@@ -3,11 +3,10 @@
 .about {
     width: auto;
     box-sizing: border-box;
-    margin-left: $mb-1-5;
-    margin-right: $mb-1-5;
-
+    background-color: $text-color-light;
+    
     .about__container {
-        background-color: $text-color-light;
+        padding: $mb-1-5;
         flex-direction: column;
         display: flex;
     }
