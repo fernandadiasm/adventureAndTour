@@ -39,11 +39,49 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== NEW SWIPER ===============*/
-let swiper = new Swiper(".new-swiper", {
+let swiperHome = new Swiper(".home-swiper", {
     loop: true,
     grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     }
+});
+
+let swiperShop = new Swiper(".shop-swiper", {
+    spaceBetween: 24,
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+let swiperBlog = new Swiper(".blog-swiper", {
+    // loop:true, 
+    grabCursor:true,
+    spaceBetween: 20,
+
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+    },
 });
