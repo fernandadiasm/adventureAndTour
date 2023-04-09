@@ -71,7 +71,7 @@ let swiperShop = new Swiper(".shop-swiper", {
 let swiperBlog = new Swiper(".blog-swiper", {
     // loop:true, 
     grabCursor:true,
-    spaceBetween: 20,
+    spaceBetween: 40,
 
     breakpoints: {
         0: {
