@@ -20,19 +20,19 @@
 
         .content__one {
             @include contentCSS;
-            background: url(../../../../public/home-bg-1.jpg) no-repeat;
+            background: url(/public/home-bg-1.jpg) no-repeat;
             background-position: right
         }
 
         .content__two {
             @include contentCSS;
-            background: url(../../../../public/home-bg-2.jpg) no-repeat;
+            background: url(/public/home-bg-2.jpg) no-repeat;
             background-position: left
         }
 
         .content__three {
             @include contentCSS;
-            background: url(../../../../public/home-bg-3.jpg) no-repeat;
+            background: url(/public/home-bg-3.jpg) no-repeat;
             background-position: right
         }
 
