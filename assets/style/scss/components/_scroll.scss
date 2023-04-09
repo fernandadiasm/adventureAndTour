@@ -30,11 +30,11 @@
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
     width: .6rem;
-    background: hsl(355, 8%, 44%);
+    background: $text-color-light;
     border-radius: 1rem;
 
     &-thumb{
-        background: hsl(355, 32%, 17%);
+        background: $first-color-alt;
         border-radius: 1rem;
     }
 }
