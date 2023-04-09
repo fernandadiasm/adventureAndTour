@@ -565,9 +565,6 @@ button {
   .about .about__container {
     flex-direction: row;
   }
-  .about .about__img {
-    padding-right: 0;
-  }
   .about .about__map iframe {
     height: 300px;
   }
