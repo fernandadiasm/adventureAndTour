@@ -17,82 +17,69 @@
     .swiper {
         height: 100vh;
 
-        &-slide {
-            .content__one {
-                @include contentCSS;
-                background: url(../../../../public/home-bg-1.jpg) no-repeat;
-                background-position: right
-            }
 
-            .content__two {
-                @include contentCSS;
-                background: url(../../../../public/home-bg-2.jpg) no-repeat;
-                background-position: left
-            }
-
-            .content__three {
-                @include contentCSS;
-                background: url(../../../../public/home-bg-3.jpg) no-repeat;
-                background-position: right
-            }
-
-            .content__text {
-                padding: 0 5rem;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            span,
-            h3,
-            p {
-                width: 100%;
-            }
-
-            span {
-                font-size: $h2-font-size;
-                color: $first-color-alt;
-            }
-
-            h3 {
-                font-size: $biggest-font-size;
-                color: $first-color;
-                padding-top: .5rem;
-                text-transform: uppercase;
-            }
-
-            p {
-                line-height: 2;
-                color: $first-color-alt;
-                font-size: $normal-font-size;
-                padding: 1rem 0;
-                text-align: justify;
-            }
-
-            .btn {
-                height: 50px;
-                width: 150px;
-                margin-top: 1rem;
-                border: 0.2rem solid $first-color-alt;
-                color: $first-color-alt;
-                cursor: pointer;
-                background: none;
-                font-size: $h3-font-size;
-                padding: .5rem 1rem;
-                transition: .3s;
-
-                &:hover {
-                    background-color: $first-color-alt;
-                    color: $body-color;
-                }
-            }
+        .content__one {
+            @include contentCSS;
+            background: url(../../../../public/home-bg-1.jpg) no-repeat;
+            background-position: right
         }
 
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            font-size: 2rem;
+        .content__two {
+            @include contentCSS;
+            background: url(../../../../public/home-bg-2.jpg) no-repeat;
+            background-position: left
+        }
+
+        .content__three {
+            @include contentCSS;
+            background: url(../../../../public/home-bg-3.jpg) no-repeat;
+            background-position: right
+        }
+
+        .content__text {
+            padding: 0 5rem;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        span,
+        h3,
+        p {
+            width: 100%;
+        }
+
+        span {
+            font-size: $h2-font-size;
             color: $first-color-alt;
         }
+
+        h3 {
+            font-size: $biggest-font-size;
+            color: $first-color;
+            padding-top: .5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 2;
+            color: $first-color-alt;
+            font-size: $normal-font-size;
+            padding: 1rem 0;
+            text-align: justify;
+        }
+
+        .btn {
+            height: 50px;
+            width: 150px;
+            border: 0.2rem solid $first-color-alt;
+        }
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 2rem;
+        color: $first-color-alt;
     }
 }
