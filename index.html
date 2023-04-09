@@ -48,7 +48,7 @@
                         <a href="#reviews" class="nav__link">Reviews</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#blogs" class="nav__link">Blogs</a>
+                        <a href="#blog" class="nav__link">Blogs</a>
                     </li>
                 </ul>
 
@@ -74,9 +74,10 @@
         <!--=============== home =================-->
         <section class="home" id="home">
             <div class="home__slider">
-                <div class="swiper new-swiper">
+                <div class="swiper home-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+
                             <div class="content__one">
                                 <div class="container__text-right">
                                     <div class="content__text">
@@ -137,7 +138,7 @@
         </section>
 
         <!--=============== category=================-->
-        <section class="category" id="category">
+        <section class="category continer section" id="category">
             <h1 class="section__title">Ideias de Aventuras!</h1>
 
             <div class="category__container">
@@ -176,7 +177,7 @@
         </section>
 
         <!--=============== about =================-->
-        <section class="about " id="about">
+        <section class="about" id="about">
             <h1 class="section__title">Sobre nós</h1>
             <div class="about__container">
 
@@ -189,24 +190,136 @@
                     <h3>Crie memoráveis experiências ao ar livre conosco</h3>
                     <p>Nossa agência fica localizada no Estado do Rio de Janeiro. Entre em contato para saber mais
                         informações: </p>
-                        
-                        <h3>Contato</h3>
-                        <a href="#"> <i class="fas fa-phone"></i> +555 (21) 9999-99999</a>
-                        <a href="#"> <i class="fas fa-envelope"></i> fernandadias.dev@gmail.com </a>
-                        <a href="#"> <i class="fas fa-map"></i> Rio de Janeiro, RJ - 1111 </a>
- 
+
+                    <h3>Contato</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +555 (21) 9999-99999</a>
+                    <a href="#"> <i class="fas fa-envelope"></i> fernandadias.dev@gmail.com </a>
+                    <a href="#"> <i class="fas fa-map"></i> Rio de Janeiro, RJ - 1111 </a>
+
                     <button href="#" class="btn">Leia mais</button>
                 </div>
-
-
-
-
             </div>
         </section>
 
+        <!--=============== shop =================-->
+        <section class="shop container section" id="shop">
+            <h1 class="section__title">Nossos Produtos</h1>
+            <div class="shop__container">
+                <div class="swiper shop-swiper">
+                    <div class="swiper-wrapper">
 
+                        <article class="shop__card swiper-slide">
+                            <img class="shop__img" src="./public/product-1.jpg" alt="imgem de uma mochila de viagem">
+                            <h3 class="shop__title">Mochila de viagem</h3>
+                            <span class="shop__price">R$1300</span>
+                            <button class="button shop__button">
+                                <i class='bx bx-heart shop__icon'></i>
+                            </button>
+                        </article>
 
+                        <article class="shop__card swiper-slide">
+                            <img class="shop__img" src="./public/product-2.jpg" alt="imagem de uma faca">
+                            <h3 class="shop__title">Faca</h3>
+                            <span class="shop__price">R$100</span>
+                            <button class="button shop__button">
+                                <i class='bx bx-heart shop__icon'></i>
+                            </button>
+                        </article>
 
+                        <article class="shop__card swiper-slide">
+                            <img class="shop__img" src="./public/product-3.jpg" alt="imagem de um óculos de sol">
+                            <h3 class="shop__title">Óculos de sol</h3>
+                            <span class="shop__price">R$500</span>
+                            <button class="button shop__button">
+                                <i class='bx bx-heart shop__icon'></i>
+                            </button>
+                        </article>
+
+                        <article class="shop__card swiper-slide">
+                            <img class="shop__img" src="./public/product-4.jpg" alt="imagem de sapatos de trilha">
+                            <h3 class="shop__title">Sapatos de trilha</h3>
+                            <span class="shop__price">R$1500</span>
+                            <button class="button shop__button">
+                                <i class='bx bx-heart shop__icon'></i>
+                            </button>
+                        </article>
+
+                        <article class="shop__card swiper-slide">
+                            <img class="shop__img" src="./public/product-5.jpg" alt="imagem de um mosquetão">
+                            <h3 class="shop__title">Mosquetão</h3>
+                            <span class="shop__price">R$200</span>
+                            <button class="button shop__button">
+                                <i class='bx bx-heart shop__icon'></i>
+                            </button>
+                        </article>
+
+                        <article class="shop__card swiper-slide">
+                            <img class="shop__img" src="./public/product-6.jpg" alt="imagem de um grill">
+                            <h3 class="shop__price">Grill</h3>
+                            <span class="shop__price">R$1200</span>
+                            <button class="button shop__button">
+                                <i class='bx bx-heart shop__icon'></i>
+                            </button>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--========= blog ===========-->
+        <section class="blog container section" id="blog">
+            <h1 class="section__title"> Últimos posts </h1>
+            <div class="blog__container">
+                <div class="swiper blog-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide blog__card">
+                            <iframe class="blog__content" src="https://www.youtube.com/embed/LojAwU1HCV8"></iframe>
+                            <div class="blog__icons">
+                                <a href="#"> <i class="fas fa-calendar"></i> 10 Abr. 2023 </a>
+                                <a href="#"> <i class="fas fa-user"></i> by administrador </a>
+                            </div>
+                            <h3 class="blog__title">10 viagens para fazer no Brasil em 2023</h3>
+                            <p class="blog__subtitle">Selecionamos os lugares que mais gostamos de conhecer e neste
+                                vídeo iremos dar 10 sugestões de viagens no Brasil para você explorar em 2023. Tudo isso
+                                com dicas de lugares para conhecer, atrações, preços, dicas gerais e também dicas de
+                                possíveis bate-voltas.</p>
+                            <button href="#" class="btn">Continue lendo</button>
+                        </div>
+
+                        <div class="swiper-slide blog__card">
+                            <img class="blog__content" src="./public/blog-img2.jpg" alt="">
+                            <div class="blog__icons">
+                                <a href="#"> <i class="fas fa-calendar"></i> 22 Dez. 2022 </a>
+                                <a href="#"> <i class="fas fa-user"></i> by administrador </a>
+                            </div>
+                            <h3 class="blog__title">Dicas de trilhas no Rio de Janeiro</h3>
+                            <p class="blog__subtitle">Que tal ver a Cidade Maravilhosa sob outra perspectiva? São mais
+                                de 200 trilhas no Rio de Janeiro, que vão desde a Zona Norte até a Zona Sul. Neste post
+                                eu falo um pouquinho sobre 11 delas, o nível de dificuldade de cada uma e por que vale a
+                                pena conhecê-las. São trilhas de nível de dificuldades ...</p>
+                            <button href="#" class="btn">Continue lendo</button>
+                        </div>
+
+                        <div class="swiper-slide blog__card">
+                            <img class="blog__content" src="./public/blog-img3.jpg" alt="">
+                            <div class="blog__icons">
+                                <a href="#"> <i class="fas fa-calendar"></i> 27 Jun. 2022 </a>
+                                <a href="#"> <i class="fas fa-user"></i> by administrador </a>
+                            </div>
+                            <h3 class="blog__title">10 passeios gratuitos no Rio de Janeiro</h3>
+                            <p class="blog__subtitle">A cidade maravilhosa é uma cidade turistica, isso a gente não tem dúvida. Mas alguns passeios são caros, o
+                                que faz com que a viagem não fique tão barata.
+                                Então como moradora daqui resolvi mostrar alguns passeios gratuitos que apenas envolvem
+                                a sua disposição de andar...</p>
+                            <button href="#" class="btn">Continue lendo</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
