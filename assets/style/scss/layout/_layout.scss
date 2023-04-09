@@ -1,10 +1,10 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 968px;
-    margin-left: $mb-1-5;
-    margin-right: $mb-1-5;
-    margin-top: $mb-1-5;
-    margin-bottom: $mb-1-5;
+    max-width: 90%;
+    // margin-left: $mb-1-5;
+    // margin-right: $mb-1-5;
+    // margin-top: $mb-1-5;
+    // margin-bottom: $mb-1-5;
 }
 
 .grid {
@@ -16,7 +16,7 @@
 }
 
 .section {
-    padding: 4.5rem 1rem;
+    padding: 2rem 2rem;
 
     &__title {
         font-size: $h1-font-size;
@@ -43,8 +43,3 @@
     }
 }
 
-// @mixin grid($val) {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-//     gap: 1.5rem;
-// }
