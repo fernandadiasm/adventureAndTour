@@ -1,32 +1,35 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container{
+.container {
     max-width: 968px;
     margin-left: $mb-1-5;
     margin-right: $mb-1-5;
     margin-top: $mb-1-5;
+    margin-bottom: $mb-1-5;
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
-.main{
+.main {
     overflow: hidden; // For animation
 }
 
-.section{
-    padding: 4.5rem  1rem;
+.section {
+    padding: 4.5rem 1rem;
 
-    &__title{
+    &__title {
         font-size: $h1-font-size;
-        margin-bottom: $mb-2-5;
+        margin-top: $mb-1;
+        margin-bottom: $mb-0-25;
         text-align: center;
+        padding-top: $mb-1;
     }
 }
 
 .btn {
     margin: $mb-1;
-    border: 0.2rem solid $first-color-alt;
+    border: 0.1rem solid $first-color-alt;
     color: $first-color-alt;
     cursor: pointer;
     background: none;
@@ -39,3 +42,9 @@
         color: $body-color;
     }
 }
+
+// @mixin grid($val) {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+//     gap: 1.5rem;
+// }
