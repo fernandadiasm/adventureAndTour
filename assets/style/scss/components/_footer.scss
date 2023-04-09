@@ -1,0 +1,55 @@
+/*=============== FOOTER ===============*/
+.footer {
+    width: 100%;
+    overflow: hidden;
+    background-color: $text-color-light;
+
+
+    .footer__container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        position: relative;
+        column-gap: 5rem;
+
+
+        .footer__title {
+            padding: $mb-2 0 $mb-0-25 0 ;
+            font-size: $h3-font-size;
+        }
+
+        .footer__links,
+        .footer__title {
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        .footer__link {
+            color: $text-color;
+            transition: .3s;
+
+            &:hover {
+                color: $first-color;
+            }
+        }
+
+    }
+
+    &__copy {
+        display: block;
+        margin: 2rem 0 0 0;
+        text-align: center;
+        font-size: $smaller-font-size;
+        color: $first-color-alt;
+
+        a {
+            &:hover {
+
+                color: $first-color;
+            }
+        }
+    }
+
+}
