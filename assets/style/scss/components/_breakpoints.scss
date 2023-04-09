@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
     body {
         margin: 0;
     }
@@ -116,10 +116,17 @@
             }
         }
     }
+
+    .blog {
+        .blog__content {
+            width: 100px;
+            height: 400px;
+        }
+    }
 }
 
 /* For large devices */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 992px) {
     .container {
         max-width: 90%;
         margin-left: auto;
@@ -154,6 +161,27 @@
             width: 140px;
             font-size: $h2-font-size;
             padding: 1rem 1rem;
+        }
+    }
+
+    .shop {
+        .shop__container {
+            padding-top: 2rem;
+        }
+
+        .shop__card {
+            margin-bottom: 5rem;
+        }
+
+        .shop__price {
+            font-size: $h3-font-size;
+        }
+    }
+
+    .blog {
+        .blog__content {
+            width: 100px;
+            height: 400px;
         }
     }
 }
