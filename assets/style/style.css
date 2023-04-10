@@ -166,19 +166,19 @@ button {
 .home .swiper .content__one {
   width: 100vw;
   height: 100vh;
-  background: url(/public/home-bg-1.jpg) no-repeat;
+  background: url(../../public/home-bg-1.jpg) no-repeat;
   background-position: right;
 }
 .home .swiper .content__two {
   width: 100vw;
   height: 100vh;
-  background: url(/public/home-bg-2.jpg) no-repeat;
+  background: url("https://github.com/fernandadiasm/travelWebsite/blob/main/public/home-bg-2.jpg?raw=true") no-repeat;
   background-position: left;
 }
 .home .swiper .content__three {
   width: 100vw;
   height: 100vh;
-  background: url(/public/home-bg-3.jpg) no-repeat;
+  background: url("https://github.com/fernandadiasm/travelWebsite/blob/main/public/home-bg-3.jpg?raw=true") no-repeat;
   background-position: right;
 }
 .home .swiper .content__text {
