@@ -101,10 +101,6 @@
         }
     }
 
-    .dark-theme .nav__menu {
-        box-shadow: none;
-    }
-
     .about {
         .about__container {
             flex-direction: row;
@@ -117,8 +113,10 @@
         }
     }
 
-    .footer__container {
-        grid-template-columns: repeat(2, max-content);
+    .footer {
+        .footer__container {
+            grid-template-columns: repeat(2, max-content);
+        }
     }
 }
 
