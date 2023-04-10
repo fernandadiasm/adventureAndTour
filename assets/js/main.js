@@ -88,23 +88,22 @@ const swiperBlog = new Swiper(".blog-swiper", {
 
 let swiperClients = new Swiper(".clients-swiper", {
     loop: true,
-    spaceBetween: 20,
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
+    spaceBetween: 25,
+    grabCursor: true,
+
+
     breakpoints: {
         0: {
-          slidesPerView: 1,
+            slidesPerView: 1,
         },
         640: {
-          slidesPerView: 2,
+            slidesPerView: 2,
         },
         768: {
-          slidesPerView: 3,
+            slidesPerView: 3,
         },
         1024: {
-          slidesPerView: 5,
+            slidesPerView: 4,
         },
     },
 });
