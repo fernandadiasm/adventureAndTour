@@ -20,7 +20,7 @@
 
         .content__one {
             @include contentCSS;
-            background: url(../../public/home-bg-1.jpg) no-repeat;
+            background: url(../../) no-repeat;
             background-position: right
         }
 
@@ -35,7 +35,7 @@
             background: url('https://github.com/fernandadiasm/travelWebsite/blob/main/public/home-bg-3.jpg?raw=true') no-repeat;
             background-position: right
         }
-
+        
         .content__text {
             padding: 0 5rem;
             height: 100vh;
