@@ -175,16 +175,4 @@
         }
     }
 
-    .footer {
-        // height: 10rem;
-        .footer__container {
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-            justify-content: space-between;
-        }
-
-        .footer__copy {
-            margin-top: 7rem;
-        }
-    }
-
 }
