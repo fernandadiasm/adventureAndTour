@@ -48,9 +48,9 @@ let swiperHome = new Swiper(".home-swiper", {
     }
 });
 
-let swiperShop = new Swiper(".shop-swiper", {
-    spaceBetween: 24,
+const swiperShop = new Swiper(".shop-swiper", {
     loop: true,
+    spaceBetween: 24,
     slidesPerView: "auto",
     centeredSlides: true,
 
@@ -68,20 +68,43 @@ let swiperShop = new Swiper(".shop-swiper", {
     },
 });
 
-let swiperBlog = new Swiper(".blog-swiper", {
+const swiperBlog = new Swiper(".blog-swiper", {
     // loop:true, 
-    grabCursor:true,
+    grabCursor: true,
     spaceBetween: 40,
 
     breakpoints: {
         0: {
-          slidesPerView: 1,
+            slidesPerView: 1,
         },
         768: {
-          slidesPerView: 2,
+            slidesPerView: 2,
         },
         991: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+let swiperClients = new Swiper(".clients-swiper", {
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
           slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 5,
         },
     },
 });
