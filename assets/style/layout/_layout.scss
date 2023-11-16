@@ -38,8 +38,14 @@
     transition: .3s;
 
     &:hover {
-        background-color: $first-color-alt;
-        color: $body-color;
+        background-color: #219150;
+        color: #fff;
+    }
+
+    a {
+        &:hover {
+            color: $first-color-alt;
+        }
     }
 }
 
