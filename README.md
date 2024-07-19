@@ -67,7 +67,7 @@ Este projeto está licenciado sob a licença MIT.
 | -------------  | --- |
 | :sparkles: Nome        | **Travel Website**
 | :label: Tecnologias | javascript, css, html
-| :camera: Img         | <img src="https://user-images.githubusercontent.com/86276393/202926760-535210a4-ab82-407b-bc68-f57bc06f6a1f.png#vitrinedev" alt="vitrine.dev thumb" width="100%"/>
+| :camera: Img         | <img src="https://github.com/fernandadiasm/travelWebsite/blob/main/.github/preview.png" alt="vitrine.dev thumb" width="100%"/>
 
 </details>
 </td>
